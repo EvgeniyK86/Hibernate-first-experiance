@@ -1,0 +1,691 @@
+[2023-05-03 05:30:47,936] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-03 05:30:48,551] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-03 05:30:48,743] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2023-05-03 05:30:48,748] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2023-05-03 05:30:48,749] INFO [org.hibernate.orm.connections.pooling: 128] HHH10001001: Connection properties: {password=****, user=postgres}
+[2023-05-03 05:30:48,749] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2023-05-03 05:30:48,754] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2023-05-03 05:30:49,075] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2023-05-03 05:30:49,918] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-03 05:30:50,053] INFO [org.hibernate.orm.connections.pooling: 550] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2023-05-03 05:32:21,009] DEBUG [org.jboss.logging: 28] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[2023-05-03 05:32:21,021] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl: 46] Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[2023-05-03 05:32:21,023] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl: 46] Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[2023-05-03 05:32:21,029] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl: 46] Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[2023-05-03 05:32:21,062] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-03 05:32:21,065] DEBUG [org.hibernate.cfg.Environment: 199] HHH000206: hibernate.properties not found
+[2023-05-03 05:32:21,338] DEBUG [org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver: 63] Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[2023-05-03 05:32:21,339] DEBUG [org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver: 87] Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[2023-05-03 05:32:21,347] DEBUG [org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor: 117] cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[2023-05-03 05:32:21,643] DEBUG [org.hibernate.cfg.Configuration: 742] Building session factory using internal StandardServiceRegistryBuilder
+[2023-05-03 05:32:21,650] DEBUG [org.hibernate.service.spi.ServiceBinding: 68] Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[2023-05-03 05:32:21,650] DEBUG [org.hibernate.cfg.Configuration: 672] Building session factory using provided StandardServiceRegistry
+[2023-05-03 05:32:21,663] DEBUG [org.hibernate.cache.internal.RegionFactoryInitiator: 118] Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[2023-05-03 05:32:21,665] DEBUG [org.hibernate.cache.internal.RegionFactoryInitiator: 49] Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[2023-05-03 05:32:21,688] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-03 05:32:21,796] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration boolean -> org.hibernate.type.BooleanType@5cdd09b1
+[2023-05-03 05:32:21,796] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration boolean -> org.hibernate.type.BooleanType@5cdd09b1
+[2023-05-03 05:32:21,796] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5cdd09b1
+[2023-05-03 05:32:21,797] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5cbe877d
+[2023-05-03 05:32:21,798] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration true_false -> org.hibernate.type.TrueFalseType@5829e4f4
+[2023-05-03 05:32:21,799] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration yes_no -> org.hibernate.type.YesNoType@c35172e
+[2023-05-03 05:32:21,800] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration byte -> org.hibernate.type.ByteType@7f6f61c8
+[2023-05-03 05:32:21,800] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration byte -> org.hibernate.type.ByteType@7f6f61c8
+[2023-05-03 05:32:21,800] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@7f6f61c8
+[2023-05-03 05:32:21,802] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration character -> org.hibernate.type.CharacterType@333dd51e
+[2023-05-03 05:32:21,802] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration char -> org.hibernate.type.CharacterType@333dd51e
+[2023-05-03 05:32:21,802] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@333dd51e
+[2023-05-03 05:32:21,804] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration short -> org.hibernate.type.ShortType@c055c54
+[2023-05-03 05:32:21,804] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration short -> org.hibernate.type.ShortType@c055c54
+[2023-05-03 05:32:21,804] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Short -> org.hibernate.type.ShortType@c055c54
+[2023-05-03 05:32:21,805] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration integer -> org.hibernate.type.IntegerType@3401a114
+[2023-05-03 05:32:21,805] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration int -> org.hibernate.type.IntegerType@3401a114
+[2023-05-03 05:32:21,806] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3401a114
+[2023-05-03 05:32:21,807] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration long -> org.hibernate.type.LongType@6bb2d00b
+[2023-05-03 05:32:21,807] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration long -> org.hibernate.type.LongType@6bb2d00b
+[2023-05-03 05:32:21,808] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Long -> org.hibernate.type.LongType@6bb2d00b
+[2023-05-03 05:32:21,809] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration float -> org.hibernate.type.FloatType@3bd418e4
+[2023-05-03 05:32:21,809] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration float -> org.hibernate.type.FloatType@3bd418e4
+[2023-05-03 05:32:21,809] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3bd418e4
+[2023-05-03 05:32:21,811] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration double -> org.hibernate.type.DoubleType@2e554a3b
+[2023-05-03 05:32:21,811] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration double -> org.hibernate.type.DoubleType@2e554a3b
+[2023-05-03 05:32:21,811] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@2e554a3b
+[2023-05-03 05:32:21,812] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5ddea849
+[2023-05-03 05:32:21,812] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5ddea849
+[2023-05-03 05:32:21,813] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration big_integer -> org.hibernate.type.BigIntegerType@37ddb69a
+[2023-05-03 05:32:21,813] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@37ddb69a
+[2023-05-03 05:32:21,814] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration string -> org.hibernate.type.StringType@235a0c16
+[2023-05-03 05:32:21,815] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.String -> org.hibernate.type.StringType@235a0c16
+[2023-05-03 05:32:21,815] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration nstring -> org.hibernate.type.StringNVarcharType@6b7906b3
+[2023-05-03 05:32:21,816] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@68044f4
+[2023-05-03 05:32:21,817] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration url -> org.hibernate.type.UrlType@5c10f1c3
+[2023-05-03 05:32:21,817] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.net.URL -> org.hibernate.type.UrlType@5c10f1c3
+[2023-05-03 05:32:21,818] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Duration -> org.hibernate.type.DurationType@3a0d172f
+[2023-05-03 05:32:21,818] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.Duration -> org.hibernate.type.DurationType@3a0d172f
+[2023-05-03 05:32:21,822] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Instant -> org.hibernate.type.InstantType@74a6a609
+[2023-05-03 05:32:21,823] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.Instant -> org.hibernate.type.InstantType@74a6a609
+[2023-05-03 05:32:21,824] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1a45193b
+[2023-05-03 05:32:21,824] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1a45193b
+[2023-05-03 05:32:21,825] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration LocalDate -> org.hibernate.type.LocalDateType@c5ee75e
+[2023-05-03 05:32:21,826] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@c5ee75e
+[2023-05-03 05:32:21,827] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@435fb7b5
+[2023-05-03 05:32:21,827] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@435fb7b5
+[2023-05-03 05:32:21,828] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@47a86fbb
+[2023-05-03 05:32:21,829] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@47a86fbb
+[2023-05-03 05:32:21,830] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@32c8e539
+[2023-05-03 05:32:21,830] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@32c8e539
+[2023-05-03 05:32:21,832] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2eced48b
+[2023-05-03 05:32:21,833] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2eced48b
+[2023-05-03 05:32:21,834] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration date -> org.hibernate.type.DateType@784b990c
+[2023-05-03 05:32:21,835] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Date -> org.hibernate.type.DateType@784b990c
+[2023-05-03 05:32:21,836] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration time -> org.hibernate.type.TimeType@43aaf813
+[2023-05-03 05:32:21,836] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Time -> org.hibernate.type.TimeType@43aaf813
+[2023-05-03 05:32:21,837] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration timestamp -> org.hibernate.type.TimestampType@18cebaa5
+[2023-05-03 05:32:21,838] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@18cebaa5
+[2023-05-03 05:32:21,838] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Date -> org.hibernate.type.TimestampType@18cebaa5
+[2023-05-03 05:32:21,839] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@f001896
+[2023-05-03 05:32:21,840] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration calendar -> org.hibernate.type.CalendarType@7ec3394b
+[2023-05-03 05:32:21,841] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7ec3394b
+[2023-05-03 05:32:21,841] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7ec3394b
+[2023-05-03 05:32:21,841] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@246f8b8b
+[2023-05-03 05:32:21,842] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@625abb97
+[2023-05-03 05:32:21,843] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration locale -> org.hibernate.type.LocaleType@72ea6193
+[2023-05-03 05:32:21,844] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@72ea6193
+[2023-05-03 05:32:21,845] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration currency -> org.hibernate.type.CurrencyType@66b7550d
+[2023-05-03 05:32:21,845] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@66b7550d
+[2023-05-03 05:32:21,847] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration timezone -> org.hibernate.type.TimeZoneType@3b2c0e88
+[2023-05-03 05:32:21,847] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@3b2c0e88
+[2023-05-03 05:32:21,848] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration class -> org.hibernate.type.ClassType@4b3a45f1
+[2023-05-03 05:32:21,848] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4b3a45f1
+[2023-05-03 05:32:21,850] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@20f12539
+[2023-05-03 05:32:21,850] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@20f12539
+[2023-05-03 05:32:21,851] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@3a3e4aff
+[2023-05-03 05:32:21,852] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration binary -> org.hibernate.type.BinaryType@45e37a7e
+[2023-05-03 05:32:21,852] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration byte[] -> org.hibernate.type.BinaryType@45e37a7e
+[2023-05-03 05:32:21,852] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [B -> org.hibernate.type.BinaryType@45e37a7e
+[2023-05-03 05:32:21,854] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@488eb7f2
+[2023-05-03 05:32:21,854] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@488eb7f2
+[2023-05-03 05:32:21,854] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@488eb7f2
+[2023-05-03 05:32:21,856] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration row_version -> org.hibernate.type.RowVersionType@320de594
+[2023-05-03 05:32:21,856] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration image -> org.hibernate.type.ImageType@1a7288a3
+[2023-05-03 05:32:21,858] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration characters -> org.hibernate.type.CharArrayType@aa549e5
+[2023-05-03 05:32:21,858] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration char[] -> org.hibernate.type.CharArrayType@aa549e5
+[2023-05-03 05:32:21,858] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [C -> org.hibernate.type.CharArrayType@aa549e5
+[2023-05-03 05:32:21,860] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7b8233cd
+[2023-05-03 05:32:21,860] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7b8233cd
+[2023-05-03 05:32:21,860] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7b8233cd
+[2023-05-03 05:32:21,861] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration text -> org.hibernate.type.TextType@1af146
+[2023-05-03 05:32:21,862] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration ntext -> org.hibernate.type.NTextType@72758afa
+[2023-05-03 05:32:21,863] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration blob -> org.hibernate.type.BlobType@3382f8ae
+[2023-05-03 05:32:21,864] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3382f8ae
+[2023-05-03 05:32:21,864] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@4a891c97
+[2023-05-03 05:32:21,866] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration clob -> org.hibernate.type.ClobType@52045dbe
+[2023-05-03 05:32:21,866] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@52045dbe
+[2023-05-03 05:32:21,868] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration nclob -> org.hibernate.type.NClobType@62f4ff3b
+[2023-05-03 05:32:21,868] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@62f4ff3b
+[2023-05-03 05:32:21,869] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@65b3a85a
+[2023-05-03 05:32:21,870] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@53d1b9b3
+[2023-05-03 05:32:21,871] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration serializable -> org.hibernate.type.SerializableType@1698ee84
+[2023-05-03 05:32:21,876] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration object -> org.hibernate.type.ObjectType@792bbc74
+[2023-05-03 05:32:21,877] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@792bbc74
+[2023-05-03 05:32:21,878] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6821ea29
+[2023-05-03 05:32:21,878] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@338494fa
+[2023-05-03 05:32:21,879] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@505a9d7c
+[2023-05-03 05:32:21,879] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@758c83d8
+[2023-05-03 05:32:21,880] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@129b4fe2
+[2023-05-03 05:32:21,880] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@5af3a0f
+[2023-05-03 05:32:21,880] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@19ae6bb
+[2023-05-03 05:32:21,880] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@10993713
+[2023-05-03 05:32:21,919] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[2023-05-03 05:32:21,920] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[2023-05-03 05:32:21,920] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[2023-05-03 05:32:21,921] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[2023-05-03 05:32:21,922] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[2023-05-03 05:32:21,924] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[2023-05-03 05:32:21,924] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[2023-05-03 05:32:21,926] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[2023-05-03 05:32:21,927] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[2023-05-03 05:32:21,928] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[2023-05-03 05:32:21,930] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[2023-05-03 05:32:21,931] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[2023-05-03 05:32:21,931] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[2023-05-03 05:32:21,932] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[2023-05-03 05:32:21,939] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2023-05-03 05:32:21,945] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2023-05-03 05:32:21,946] INFO [org.hibernate.orm.connections.pooling: 125] HHH10001001: Connection properties: {password=12345, user=postgres}
+[2023-05-03 05:32:21,946] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2023-05-03 05:32:21,951] DEBUG [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 384] Initializing Connection pool with 1 Connections
+[2023-05-03 05:32:21,951] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2023-05-03 05:32:22,321] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: 72] Database ->
+       name : PostgreSQL
+    version : 15.2
+      major : 15
+      minor : 2
+[2023-05-03 05:32:22,321] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: 83] Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.6.0
+      major : 42
+      minor : 6
+[2023-05-03 05:32:22,322] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: 389] JDBC version : 4.2
+[2023-05-03 05:32:22,338] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2023-05-03 05:32:22,357] DEBUG [org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder: 114] JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+[2023-05-03 05:32:22,396] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@251ebf23
+[2023-05-03 05:32:22,397] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@251ebf23
+[2023-05-03 05:32:22,397] DEBUG [org.hibernate.type.BasicTypeRegistry: 160] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@20f12539
+[2023-05-03 05:32:22,400] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope: 149] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4c5204af] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3f3ddbd9]
+[2023-05-03 05:32:22,444] DEBUG [org.hibernate.boot.model.relational.Namespace: 51] Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[2023-05-03 05:32:22,461] DEBUG [org.hibernate.cfg.AnnotationBinder: 547] Binding entity from annotated class: hibernate.entity.Flight
+[2023-05-03 05:32:22,486] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[2023-05-03 05:32:22,494] DEBUG [org.hibernate.cfg.annotations.EntityBinder: 431] Import with entity name Flight
+[2023-05-03 05:32:22,501] DEBUG [org.hibernate.cfg.annotations.EntityBinder: 874] Bind entity hibernate.entity.Flight on table flight
+[2023-05-03 05:32:22,647] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,652] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 60] Not known whether passed class name [hibernate.entity.Flight] is safe
+[2023-05-03 05:32:22,653] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hibernate.entity.Flight
+[2023-05-03 05:32:22,658] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property id with lazy=false
+[2023-05-03 05:32:22,662] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:id]
+[2023-05-03 05:32:22,666] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for id
+[2023-05-03 05:32:22,669] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property id
+[2023-05-03 05:32:22,680] DEBUG [org.hibernate.cfg.BinderHelper: 514] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+[2023-05-03 05:32:22,683] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=aircraft_id, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,691] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property aircraftId with lazy=false
+[2023-05-03 05:32:22,692] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:aircraftId]
+[2023-05-03 05:32:22,693] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for aircraftId
+[2023-05-03 05:32:22,696] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property aircraftId
+[2023-05-03 05:32:22,699] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=arrival_airport_code, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,699] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property arrivalAirportCode with lazy=false
+[2023-05-03 05:32:22,700] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:arrivalAirportCode]
+[2023-05-03 05:32:22,702] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for arrivalAirportCode
+[2023-05-03 05:32:22,704] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property arrivalAirportCode
+[2023-05-03 05:32:22,709] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=arrival_date, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,709] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property arrivalDate with lazy=false
+[2023-05-03 05:32:22,710] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:arrivalDate]
+[2023-05-03 05:32:22,710] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for arrivalDate
+[2023-05-03 05:32:22,710] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property arrivalDate
+[2023-05-03 05:32:22,711] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=departure_airport_code, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,712] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property departureAirportCode with lazy=false
+[2023-05-03 05:32:22,714] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:departureAirportCode]
+[2023-05-03 05:32:22,714] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for departureAirportCode
+[2023-05-03 05:32:22,721] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property departureAirportCode
+[2023-05-03 05:32:22,722] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=departure_date, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,737] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property departureDate with lazy=false
+[2023-05-03 05:32:22,741] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:departureDate]
+[2023-05-03 05:32:22,742] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for departureDate
+[2023-05-03 05:32:22,742] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property departureDate
+[2023-05-03 05:32:22,743] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=flight_no, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,743] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property flightNo with lazy=false
+[2023-05-03 05:32:22,744] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:flightNo]
+[2023-05-03 05:32:22,744] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for flightNo
+[2023-05-03 05:32:22,744] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property flightNo
+[2023-05-03 05:32:22,744] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=status, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:32:22,745] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property status with lazy=false
+[2023-05-03 05:32:22,745] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:status]
+[2023-05-03 05:32:22,747] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for status
+[2023-05-03 05:32:22,747] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property status
+[2023-05-03 05:32:22,756] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for id
+[2023-05-03 05:32:22,757] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for aircraftId
+[2023-05-03 05:32:22,757] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for arrivalAirportCode
+[2023-05-03 05:32:22,757] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for arrivalDate
+[2023-05-03 05:32:22,757] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for departureAirportCode
+[2023-05-03 05:32:22,757] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for departureDate
+[2023-05-03 05:32:22,757] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for flightNo
+[2023-05-03 05:32:22,758] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for status
+[2023-05-03 05:32:22,760] DEBUG [org.hibernate.mapping.PrimaryKey: 36] Forcing column [id] to be non-null as it is part of the primary key for table [flight]
+[2023-05-03 05:32:22,799] DEBUG [org.hibernate.internal.SessionFactoryImpl: 208] Building session factory
+[2023-05-03 05:32:22,800] DEBUG [org.hibernate.cfg.Settings: 68] SessionFactory name : null
+[2023-05-03 05:32:22,800] DEBUG [org.hibernate.cfg.Settings: 69] Automatic flush during beforeCompletion(): enabled
+[2023-05-03 05:32:22,800] DEBUG [org.hibernate.cfg.Settings: 70] Automatic session close at end of transaction: disabled
+[2023-05-03 05:32:22,800] DEBUG [org.hibernate.cfg.Settings: 72] Statistics: disabled
+[2023-05-03 05:32:22,800] DEBUG [org.hibernate.cfg.Settings: 74] Deleted entity synthetic identifier rollback: disabled
+[2023-05-03 05:32:22,800] DEBUG [org.hibernate.cfg.Settings: 75] Default entity-mode: pojo
+[2023-05-03 05:32:22,801] DEBUG [org.hibernate.cfg.Settings: 76] Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[2023-05-03 05:32:22,804] DEBUG [org.hibernate.cfg.Settings: 77] Allow initialization of lazy state outside session : disabled
+[2023-05-03 05:32:22,804] DEBUG [org.hibernate.cfg.Settings: 79] Using BatchFetchStyle : LEGACY
+[2023-05-03 05:32:22,804] DEBUG [org.hibernate.cfg.Settings: 80] Default batch fetch size: -1
+[2023-05-03 05:32:22,804] DEBUG [org.hibernate.cfg.Settings: 81] Maximum outer join fetch depth: null
+[2023-05-03 05:32:22,804] DEBUG [org.hibernate.cfg.Settings: 82] Default null ordering: NONE
+[2023-05-03 05:32:22,805] DEBUG [org.hibernate.cfg.Settings: 83] Order SQL updates by primary key: disabled
+[2023-05-03 05:32:22,805] DEBUG [org.hibernate.cfg.Settings: 84] Order SQL inserts for batching: disabled
+[2023-05-03 05:32:22,805] DEBUG [org.hibernate.cfg.Settings: 86] multi-tenancy strategy : NONE
+[2023-05-03 05:32:22,805] DEBUG [org.hibernate.cfg.Settings: 88] JTA Track by Thread: enabled
+[2023-05-03 05:32:22,805] DEBUG [org.hibernate.cfg.Settings: 90] Query language substitutions: {}
+[2023-05-03 05:32:22,805] DEBUG [org.hibernate.cfg.Settings: 91] Named query checking : enabled
+[2023-05-03 05:32:22,805] DEBUG [org.hibernate.cfg.Settings: 93] Second-level cache: disabled
+[2023-05-03 05:32:22,806] DEBUG [org.hibernate.cfg.Settings: 94] Second-level query cache: disabled
+[2023-05-03 05:32:22,806] DEBUG [org.hibernate.cfg.Settings: 95] Second-level query cache factory: null
+[2023-05-03 05:32:22,806] DEBUG [org.hibernate.cfg.Settings: 96] Second-level cache region prefix: null
+[2023-05-03 05:32:22,806] DEBUG [org.hibernate.cfg.Settings: 97] Optimize second-level cache for minimal puts: disabled
+[2023-05-03 05:32:22,806] DEBUG [org.hibernate.cfg.Settings: 98] Structured second-level cache entries: disabled
+[2023-05-03 05:32:22,806] DEBUG [org.hibernate.cfg.Settings: 99] Second-level cache direct-reference entries: disabled
+[2023-05-03 05:32:22,806] DEBUG [org.hibernate.cfg.Settings: 100] Automatic eviction of collection cache: disabled
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 102] JDBC batch size: 15
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 103] JDBC batch updates for versioned data: enabled
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 104] Scrollable result sets: enabled
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 105] Wrap result sets: disabled
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 106] JDBC3 getGeneratedKeys(): enabled
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 107] JDBC result set fetch size: null
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 108] Connection release mode: AFTER_TRANSACTION
+[2023-05-03 05:32:22,807] DEBUG [org.hibernate.cfg.Settings: 109] Generate SQL with comments: disabled
+[2023-05-03 05:32:22,808] DEBUG [org.hibernate.cfg.Settings: 111] JPA compliance - query : disabled
+[2023-05-03 05:32:22,808] DEBUG [org.hibernate.cfg.Settings: 112] JPA compliance - closed-handling : disabled
+[2023-05-03 05:32:22,808] DEBUG [org.hibernate.cfg.Settings: 113] JPA compliance - lists : disabled
+[2023-05-03 05:32:22,808] DEBUG [org.hibernate.cfg.Settings: 114] JPA compliance - transactions : disabled
+[2023-05-03 05:32:22,906] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl: 92] EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[2023-05-03 05:32:22,911] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl: 92] EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[2023-05-03 05:32:22,935] DEBUG [org.hibernate.internal.SessionFactoryImpl: 276] Session factory constructed with filter configurations : {}
+[2023-05-03 05:32:22,936] DEBUG [org.hibernate.internal.SessionFactoryImpl: 277] Instantiating session factory with properties: {hibernate.format_sql=true, java.specification.version=19, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, java.class.path=D:\JavaEnterprise\Hibernate-first-experiance\target\classes;C:\Users\Малюпасики\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\Малюпасики\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\Малюпасики\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Малюпасики\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\Малюпасики\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Малюпасики\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Малюпасики\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Малюпасики\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Малюпасики\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Малюпасики\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Малюпасики\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Малюпасики\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Малюпасики\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Малюпасики\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Малюпасики\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Малюпасики\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Малюпасики\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Малюпасики\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Малюпасики\.m2\repository\org\slf4j\slf4j-reload4j\2.0.7\slf4j-reload4j-2.0.7.jar;C:\Users\Малюпасики\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Малюпасики\.m2\repository\ch\qos\reload4j\reload4j\1.2.22\reload4j-1.2.22.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Minsk, java.vm.specification.version=19, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Users\Малюпасики\.jdks\openjdk-19.0.1\bin, sun.java.command=hibernate.HibernateRunner, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Малюпасики, user.language=ru, sun.stderr.encoding=UTF-8, java.specification.vendor=Oracle Corporation, java.version.date=2022-10-18, java.home=C:\Users\Малюпасики\.jdks\openjdk-19.0.1, file.separator=\, java.vm.compressedOopsMode=32-bit, sun.stdout.encoding=UTF-8, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, connection.password=12345, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=19.0.1+10-21, user.name=Малюпасики, stdout.encoding=UTF-8, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5433/postgres, file.encoding=UTF-8, format_sql=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\34EA~1\AppData\Local\Temp\, java.version=19.0.1, user.dir=D:\JavaEnterprise\Hibernate-first-experiance, os.arch=amd64, connection.username=postgres, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=org.postgresql.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@5327a06e, native.encoding=Cp1251, java.library.path=C:\Users\Малюпасики\.jdks\openjdk-19.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-19\\bin;C:\Program Files\apache-maven-3.9.0bin;C:\Program Files\Git\cmd;D:\JavaEnterprise\PostgreSQL\13\bin;C:\Users\Малюпасики\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-19bin;C:\Program Files\apache-maven-3.9.0bin;;D:\JavaEnterprise\IntelliJ IDEA 2023.1\bin;;., stderr.encoding=UTF-8, java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=19.0.1+10-21, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:postgresql://localhost:5433/postgres, java.class.version=63.0}
+[2023-05-03 05:32:22,957] DEBUG [org.hibernate.secure.spi.JaccIntegrator: 84] Skipping JACC integration as it was not enabled
+[2023-05-03 05:32:22,966] DEBUG [org.hibernate.type.EnumType: 126] Using NAMED-based conversion for Enum hibernate.entity.FlightStatus
+[2023-05-03 05:32:22,968] DEBUG [org.hibernate.internal.SessionFactoryImpl: 316] Instantiated session factory
+[2023-05-03 05:32:22,968] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope: 154] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4c5204af] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6441c486]
+[2023-05-03 05:32:23,050] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 60] Not known whether passed class name [hibernate.entity.Flight] is safe
+[2023-05-03 05:32:23,050] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hibernate.entity.Flight
+[2023-05-03 05:32:23,379] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4031] Static SQL for entity: hibernate.entity.Flight
+[2023-05-03 05:32:23,379] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4036]  Version select: select id from flight where id =?
+[2023-05-03 05:32:23,380] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4039]  Snapshot select: select flight_.id, flight_.aircraft_id as aircraft2_0_, flight_.arrival_airport_code as arrival_3_0_, flight_.arrival_date as arrival_4_0_, flight_.departure_airport_code as departur5_0_, flight_.departure_date as departur6_0_, flight_.flight_no as flight_n7_0_, flight_.status as status8_0_ from flight flight_ where flight_.id=?
+[2023-05-03 05:32:23,380] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 394]  Insert 0: insert into flight (aircraft_id, arrival_airport_code, arrival_date, departure_airport_code, departure_date, flight_no, status, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+[2023-05-03 05:32:23,380] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 394]  Update 0: update flight set aircraft_id=?, arrival_airport_code=?, arrival_date=?, departure_airport_code=?, departure_date=?, flight_no=?, status=? where id=?
+[2023-05-03 05:32:23,380] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 394]  Delete 0: delete from flight where id=?
+[2023-05-03 05:32:23,380] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4047]  Identity insert: insert into flight (aircraft_id, arrival_airport_code, arrival_date, departure_airport_code, departure_date, flight_no, status) values (?, ?, ?, ?, ?, ?, ?)
+[2023-05-03 05:32:23,404] DEBUG [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl: 174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52d97ab6]
+[2023-05-03 05:32:23,405] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : aircraftId
+[2023-05-03 05:32:23,406] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : arrivalAirportCode
+[2023-05-03 05:32:23,406] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : arrivalDate
+[2023-05-03 05:32:23,406] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : departureAirportCode
+[2023-05-03 05:32:23,406] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : departureDate
+[2023-05-03 05:32:23,406] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : flightNo
+[2023-05-03 05:32:23,406] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : status
+[2023-05-03 05:32:23,406] DEBUG [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy: 160] Building LoadPlan...
+[2023-05-03 05:32:23,417] DEBUG [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor: 102] processing queryspace <gen:0>
+[2023-05-03 05:32:23,421] DEBUG [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter: 55] LoadPlan(entity=hibernate.entity.Flight)
+    - Returns
+       - EntityReturnImpl(entity=hibernate.entity.Flight, querySpaceUid=<gen:0>, path=hibernate.entity.Flight)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hibernate.entity.Flight)
+          - SQL table alias mapping - flight0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[2023-05-03 05:32:23,423] DEBUG [org.hibernate.loader.entity.plan.EntityLoader: 129] Static select for entity hibernate.entity.Flight [NONE]: select flight0_.id as id1_0_0_, flight0_.aircraft_id as aircraft2_0_0_, flight0_.arrival_airport_code as arrival_3_0_0_, flight0_.arrival_date as arrival_4_0_0_, flight0_.departure_airport_code as departur5_0_0_, flight0_.departure_date as departur6_0_0_, flight0_.flight_no as flight_n7_0_0_, flight0_.status as status8_0_0_ from flight flight0_ where flight0_.id=?
+[2023-05-03 05:32:23,461] DEBUG [org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator: 556] No schema actions specified
+[2023-05-03 05:32:23,461] DEBUG [org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator: 69] No actions specified; doing nothing
+[2023-05-03 05:32:23,461] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 43] No JtaPlatform was specified, checking resolver
+[2023-05-03 05:32:23,462] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator: 33] No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[2023-05-03 05:32:23,466] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver: 137] Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-03 05:32:23,467] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-03 05:32:23,471] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl: 92] EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[2023-05-03 05:32:23,473] DEBUG [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: 45] QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@340a8894
+[2023-05-03 05:32:23,478] DEBUG [org.hibernate.query.spi.NamedQueryRepository: 171] Checking 0 named HQL queries
+[2023-05-03 05:32:23,478] DEBUG [org.hibernate.query.spi.NamedQueryRepository: 185] Checking 0 named SQL queries
+[2023-05-03 05:32:23,479] DEBUG [org.hibernate.internal.SessionFactoryRegistry: 51] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2e869098
+[2023-05-03 05:32:23,481] DEBUG [org.hibernate.internal.SessionFactoryRegistry: 73] Registering SessionFactory: a8a2476b-fdc7-41cb-b2b4-dba79440d3cd (<unnamed>)
+[2023-05-03 05:32:23,481] DEBUG [org.hibernate.internal.SessionFactoryRegistry: 80] Not binding SessionFactory to JNDI, no JNDI name configured
+[2023-05-03 05:32:23,533] DEBUG [org.hibernate.stat.internal.StatisticsInitiator: 101] Statistics initialized [enabled=false]
+[2023-05-03 05:32:23,538] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl: 53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2023-05-03 05:32:23,539] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl: 81] begin
+[2023-05-03 05:32:23,555] DEBUG [org.hibernate.engine.spi.ActionQueue: 281] Executing identity-insert immediately
+[2023-05-03 05:32:23,561] DEBUG [org.hibernate.SQL: 144] 
+    insert 
+    into
+        flight
+        (aircraft_id, arrival_airport_code, arrival_date, departure_airport_code, departure_date, flight_no, status) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+[2023-05-03 05:32:23,575] DEBUG [org.hibernate.id.IdentifierGeneratorHelper: 78] Natively generated identity: 13
+[2023-05-03 05:32:23,575] DEBUG [org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl: 106] HHH000387: ResultSet's statement was not registered
+[2023-05-03 05:32:23,578] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl: 98] committing
+[2023-05-03 05:32:23,579] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 140] Processing flush-time cascades
+[2023-05-03 05:32:23,579] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 193] Dirty checking collections
+[2023-05-03 05:32:23,585] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 114] Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[2023-05-03 05:32:23,585] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 121] Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[2023-05-03 05:32:23,586] DEBUG [org.hibernate.internal.util.EntityPrinter: 110] Listing entities:
+[2023-05-03 05:32:23,587] DEBUG [org.hibernate.internal.util.EntityPrinter: 117] hibernate.entity.Flight{aircraftId=1, arrivalAirportCode=LDN, flightNo=WE3467, id=13, departureDate=2000-01-19T01:00, departureAirportCode=MNK, arrivalDate=2000-01-19T05:05, status=SCHEDULED}
+[2023-05-03 05:32:23,591] DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl: 174] Initiating JDBC connection release from afterTransaction
+[2023-05-03 05:32:23,592] DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl: 174] Initiating JDBC connection release from afterTransaction
+[2023-05-03 05:32:23,593] DEBUG [org.hibernate.internal.SessionFactoryImpl: 821] HHH000031: Closing
+[2023-05-03 05:32:23,593] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope: 345] Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@16a35bd] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@6441c486]
+[2023-05-03 05:32:23,594] DEBUG [org.hibernate.service.internal.AbstractServiceRegistryImpl: 428] Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+[2023-05-03 05:32:23,594] INFO [org.hibernate.orm.connections.pooling: 550] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2023-05-03 05:32:23,596] DEBUG [org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl: 295] Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+[2023-05-03 05:40:42,495] DEBUG [org.jboss.logging: 28] Logging Provider: org.jboss.logging.Log4jLoggerProvider
+[2023-05-03 05:40:42,506] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl: 46] Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[2023-05-03 05:40:42,509] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl: 46] Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[2023-05-03 05:40:42,514] DEBUG [org.hibernate.integrator.internal.IntegratorServiceImpl: 46] Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[2023-05-03 05:40:42,548] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 5.6.15.Final
+[2023-05-03 05:40:42,550] DEBUG [org.hibernate.cfg.Environment: 199] HHH000206: hibernate.properties not found
+[2023-05-03 05:40:42,815] DEBUG [org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver: 63] Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+[2023-05-03 05:40:42,817] DEBUG [org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver: 87] Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+[2023-05-03 05:40:42,824] DEBUG [org.hibernate.boot.cfgxml.internal.JaxbCfgProcessor: 117] cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[2023-05-03 05:40:43,117] INFO [hibernate.HibernateRunner: 30] Flight object is transient stateFlight(id=null, flightNo=WE3467, departureDate=2000-01-19T01:00, departureAirportCode=MNK, arrivalDate=2000-01-19T05:05, arrivalAirportCode=LDN, aircraftId=1, status=SCHEDULED)
+[2023-05-03 05:40:43,117] DEBUG [org.hibernate.cfg.Configuration: 742] Building session factory using internal StandardServiceRegistryBuilder
+[2023-05-03 05:40:43,124] DEBUG [org.hibernate.service.spi.ServiceBinding: 68] Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[2023-05-03 05:40:43,124] DEBUG [org.hibernate.cfg.Configuration: 672] Building session factory using provided StandardServiceRegistry
+[2023-05-03 05:40:43,137] DEBUG [org.hibernate.cache.internal.RegionFactoryInitiator: 118] Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[2023-05-03 05:40:43,139] DEBUG [org.hibernate.cache.internal.RegionFactoryInitiator: 49] Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[2023-05-03 05:40:43,161] INFO [org.hibernate.annotations.common.Version: 56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2023-05-03 05:40:43,264] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration boolean -> org.hibernate.type.BooleanType@2a5b3fee
+[2023-05-03 05:40:43,264] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration boolean -> org.hibernate.type.BooleanType@2a5b3fee
+[2023-05-03 05:40:43,264] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@2a5b3fee
+[2023-05-03 05:40:43,265] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@2101b44a
+[2023-05-03 05:40:43,266] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration true_false -> org.hibernate.type.TrueFalseType@3d9f6567
+[2023-05-03 05:40:43,266] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration yes_no -> org.hibernate.type.YesNoType@73173f63
+[2023-05-03 05:40:43,267] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration byte -> org.hibernate.type.ByteType@3ecd267f
+[2023-05-03 05:40:43,268] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration byte -> org.hibernate.type.ByteType@3ecd267f
+[2023-05-03 05:40:43,268] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@3ecd267f
+[2023-05-03 05:40:43,269] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration character -> org.hibernate.type.CharacterType@4c5474f5
+[2023-05-03 05:40:43,269] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration char -> org.hibernate.type.CharacterType@4c5474f5
+[2023-05-03 05:40:43,270] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4c5474f5
+[2023-05-03 05:40:43,271] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration short -> org.hibernate.type.ShortType@3569fc08
+[2023-05-03 05:40:43,271] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration short -> org.hibernate.type.ShortType@3569fc08
+[2023-05-03 05:40:43,271] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Short -> org.hibernate.type.ShortType@3569fc08
+[2023-05-03 05:40:43,272] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration integer -> org.hibernate.type.IntegerType@522a32b1
+[2023-05-03 05:40:43,273] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration int -> org.hibernate.type.IntegerType@522a32b1
+[2023-05-03 05:40:43,273] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@522a32b1
+[2023-05-03 05:40:43,275] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration long -> org.hibernate.type.LongType@58fb7731
+[2023-05-03 05:40:43,275] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration long -> org.hibernate.type.LongType@58fb7731
+[2023-05-03 05:40:43,275] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Long -> org.hibernate.type.LongType@58fb7731
+[2023-05-03 05:40:43,276] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration float -> org.hibernate.type.FloatType@5e8ac0e1
+[2023-05-03 05:40:43,276] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration float -> org.hibernate.type.FloatType@5e8ac0e1
+[2023-05-03 05:40:43,277] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5e8ac0e1
+[2023-05-03 05:40:43,278] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration double -> org.hibernate.type.DoubleType@6b7906b3
+[2023-05-03 05:40:43,278] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration double -> org.hibernate.type.DoubleType@6b7906b3
+[2023-05-03 05:40:43,278] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6b7906b3
+[2023-05-03 05:40:43,279] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@68fa0ba8
+[2023-05-03 05:40:43,279] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@68fa0ba8
+[2023-05-03 05:40:43,281] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration big_integer -> org.hibernate.type.BigIntegerType@64a8c844
+[2023-05-03 05:40:43,281] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@64a8c844
+[2023-05-03 05:40:43,282] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration string -> org.hibernate.type.StringType@781f10f2
+[2023-05-03 05:40:43,282] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.String -> org.hibernate.type.StringType@781f10f2
+[2023-05-03 05:40:43,283] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1755e85b
+[2023-05-03 05:40:43,284] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@63fdab07
+[2023-05-03 05:40:43,285] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration url -> org.hibernate.type.UrlType@5a411614
+[2023-05-03 05:40:43,285] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.net.URL -> org.hibernate.type.UrlType@5a411614
+[2023-05-03 05:40:43,286] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Duration -> org.hibernate.type.DurationType@38f116f6
+[2023-05-03 05:40:43,286] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.Duration -> org.hibernate.type.DurationType@38f116f6
+[2023-05-03 05:40:43,290] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Instant -> org.hibernate.type.InstantType@5733f295
+[2023-05-03 05:40:43,291] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5733f295
+[2023-05-03 05:40:43,292] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@7fe7c640
+[2023-05-03 05:40:43,292] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@7fe7c640
+[2023-05-03 05:40:43,293] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4795ded0
+[2023-05-03 05:40:43,294] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4795ded0
+[2023-05-03 05:40:43,295] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@4b7e96a
+[2023-05-03 05:40:43,295] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@4b7e96a
+[2023-05-03 05:40:43,297] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@784b990c
+[2023-05-03 05:40:43,297] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@784b990c
+[2023-05-03 05:40:43,299] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@33aeca0b
+[2023-05-03 05:40:43,299] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@33aeca0b
+[2023-05-03 05:40:43,301] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c098bb3
+[2023-05-03 05:40:43,301] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@7c098bb3
+[2023-05-03 05:40:43,303] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration date -> org.hibernate.type.DateType@5c153b9e
+[2023-05-03 05:40:43,303] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Date -> org.hibernate.type.DateType@5c153b9e
+[2023-05-03 05:40:43,304] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration time -> org.hibernate.type.TimeType@246f8b8b
+[2023-05-03 05:40:43,305] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Time -> org.hibernate.type.TimeType@246f8b8b
+[2023-05-03 05:40:43,306] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration timestamp -> org.hibernate.type.TimestampType@5b1f29fa
+[2023-05-03 05:40:43,306] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@5b1f29fa
+[2023-05-03 05:40:43,306] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Date -> org.hibernate.type.TimestampType@5b1f29fa
+[2023-05-03 05:40:43,308] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@55342f40
+[2023-05-03 05:40:43,309] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration calendar -> org.hibernate.type.CalendarType@2ccca26f
+[2023-05-03 05:40:43,310] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@2ccca26f
+[2023-05-03 05:40:43,310] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@2ccca26f
+[2023-05-03 05:40:43,311] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@698122b2
+[2023-05-03 05:40:43,312] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@1c6804cd
+[2023-05-03 05:40:43,313] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration locale -> org.hibernate.type.LocaleType@39ad977d
+[2023-05-03 05:40:43,313] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@39ad977d
+[2023-05-03 05:40:43,314] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration currency -> org.hibernate.type.CurrencyType@3a3e4aff
+[2023-05-03 05:40:43,314] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@3a3e4aff
+[2023-05-03 05:40:43,315] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration timezone -> org.hibernate.type.TimeZoneType@7e22550a
+[2023-05-03 05:40:43,315] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7e22550a
+[2023-05-03 05:40:43,316] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration class -> org.hibernate.type.ClassType@7516e4e5
+[2023-05-03 05:40:43,316] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7516e4e5
+[2023-05-03 05:40:43,317] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6035b93b
+[2023-05-03 05:40:43,317] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6035b93b
+[2023-05-03 05:40:43,318] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@478ee483
+[2023-05-03 05:40:43,319] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration binary -> org.hibernate.type.BinaryType@aa549e5
+[2023-05-03 05:40:43,320] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration byte[] -> org.hibernate.type.BinaryType@aa549e5
+[2023-05-03 05:40:43,320] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [B -> org.hibernate.type.BinaryType@aa549e5
+[2023-05-03 05:40:43,322] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@7b8233cd
+[2023-05-03 05:40:43,322] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@7b8233cd
+[2023-05-03 05:40:43,322] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@7b8233cd
+[2023-05-03 05:40:43,324] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration row_version -> org.hibernate.type.RowVersionType@25b2cfcb
+[2023-05-03 05:40:43,324] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration image -> org.hibernate.type.ImageType@7fc6de5b
+[2023-05-03 05:40:43,326] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration characters -> org.hibernate.type.CharArrayType@3382f8ae
+[2023-05-03 05:40:43,327] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration char[] -> org.hibernate.type.CharArrayType@3382f8ae
+[2023-05-03 05:40:43,327] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [C -> org.hibernate.type.CharArrayType@3382f8ae
+[2023-05-03 05:40:43,329] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@75390459
+[2023-05-03 05:40:43,329] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@75390459
+[2023-05-03 05:40:43,330] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@75390459
+[2023-05-03 05:40:43,330] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration text -> org.hibernate.type.TextType@16746061
+[2023-05-03 05:40:43,331] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration ntext -> org.hibernate.type.NTextType@674658f7
+[2023-05-03 05:40:43,333] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration blob -> org.hibernate.type.BlobType@1698fc68
+[2023-05-03 05:40:43,334] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1698fc68
+[2023-05-03 05:40:43,335] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@34997338
+[2023-05-03 05:40:43,337] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration clob -> org.hibernate.type.ClobType@788fcafb
+[2023-05-03 05:40:43,338] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@788fcafb
+[2023-05-03 05:40:43,340] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration nclob -> org.hibernate.type.NClobType@75459c75
+[2023-05-03 05:40:43,340] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@75459c75
+[2023-05-03 05:40:43,341] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@67ab1c47
+[2023-05-03 05:40:43,342] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@15cafec7
+[2023-05-03 05:40:43,344] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration serializable -> org.hibernate.type.SerializableType@338494fa
+[2023-05-03 05:40:43,348] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration object -> org.hibernate.type.ObjectType@56bca85b
+[2023-05-03 05:40:43,349] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@56bca85b
+[2023-05-03 05:40:43,350] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@531c311e
+[2023-05-03 05:40:43,351] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@22b53226
+[2023-05-03 05:40:43,351] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@1fcb4808
+[2023-05-03 05:40:43,351] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@726e5805
+[2023-05-03 05:40:43,352] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@40c80397
+[2023-05-03 05:40:43,352] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4b672daa
+[2023-05-03 05:40:43,352] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@ea9b7c6
+[2023-05-03 05:40:43,354] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@e077866
+[2023-05-03 05:40:43,396] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[2023-05-03 05:40:43,397] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[2023-05-03 05:40:43,398] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[2023-05-03 05:40:43,399] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[2023-05-03 05:40:43,399] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[2023-05-03 05:40:43,401] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[2023-05-03 05:40:43,402] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[2023-05-03 05:40:43,404] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[2023-05-03 05:40:43,405] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[2023-05-03 05:40:43,406] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[2023-05-03 05:40:43,407] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[2023-05-03 05:40:43,408] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[2023-05-03 05:40:43,408] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[2023-05-03 05:40:43,410] DEBUG [org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory: 98] Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[2023-05-03 05:40:43,417] WARN [org.hibernate.orm.connections.pooling: 75] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[2023-05-03 05:40:43,424] INFO [org.hibernate.orm.connections.pooling: 119] HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5433/postgres]
+[2023-05-03 05:40:43,425] INFO [org.hibernate.orm.connections.pooling: 125] HHH10001001: Connection properties: {password=12345, user=postgres}
+[2023-05-03 05:40:43,425] INFO [org.hibernate.orm.connections.pooling: 132] HHH10001003: Autocommit mode: false
+[2023-05-03 05:40:43,431] DEBUG [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 384] Initializing Connection pool with 1 Connections
+[2023-05-03 05:40:43,432] INFO [org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: 322] HHH000115: Hibernate connection pool size: 20 (min=1)
+[2023-05-03 05:40:43,778] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: 72] Database ->
+       name : PostgreSQL
+    version : 15.2
+      major : 15
+      minor : 2
+[2023-05-03 05:40:43,779] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: 83] Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.6.0
+      major : 42
+      minor : 6
+[2023-05-03 05:40:43,779] DEBUG [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator: 389] JDBC version : 4.2
+[2023-05-03 05:40:43,796] INFO [org.hibernate.dialect.Dialect: 175] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+[2023-05-03 05:40:43,815] DEBUG [org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder: 114] JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+[2023-05-03 05:40:43,854] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@3b0f7d9d
+[2023-05-03 05:40:43,857] DEBUG [org.hibernate.type.BasicTypeRegistry: 157] Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@3b0f7d9d
+[2023-05-03 05:40:43,857] DEBUG [org.hibernate.type.BasicTypeRegistry: 160] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6035b93b
+[2023-05-03 05:40:43,860] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope: 149] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5b43e173] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@28f8e165]
+[2023-05-03 05:40:43,912] DEBUG [org.hibernate.boot.model.relational.Namespace: 51] Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[2023-05-03 05:40:43,929] DEBUG [org.hibernate.cfg.AnnotationBinder: 547] Binding entity from annotated class: hibernate.entity.Flight
+[2023-05-03 05:40:43,951] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[2023-05-03 05:40:43,960] DEBUG [org.hibernate.cfg.annotations.EntityBinder: 431] Import with entity name Flight
+[2023-05-03 05:40:43,967] DEBUG [org.hibernate.cfg.annotations.EntityBinder: 874] Bind entity hibernate.entity.Flight on table flight
+[2023-05-03 05:40:44,017] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,022] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 60] Not known whether passed class name [hibernate.entity.Flight] is safe
+[2023-05-03 05:40:44,024] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hibernate.entity.Flight
+[2023-05-03 05:40:44,030] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property id with lazy=false
+[2023-05-03 05:40:44,033] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:id]
+[2023-05-03 05:40:44,039] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for id
+[2023-05-03 05:40:44,047] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property id
+[2023-05-03 05:40:44,064] DEBUG [org.hibernate.cfg.BinderHelper: 514] #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+[2023-05-03 05:40:44,076] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=aircraft_id, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,078] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property aircraftId with lazy=false
+[2023-05-03 05:40:44,081] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:aircraftId]
+[2023-05-03 05:40:44,083] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for aircraftId
+[2023-05-03 05:40:44,086] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property aircraftId
+[2023-05-03 05:40:44,087] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=arrival_airport_code, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,087] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property arrivalAirportCode with lazy=false
+[2023-05-03 05:40:44,087] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:arrivalAirportCode]
+[2023-05-03 05:40:44,088] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for arrivalAirportCode
+[2023-05-03 05:40:44,088] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property arrivalAirportCode
+[2023-05-03 05:40:44,088] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=arrival_date, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,089] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property arrivalDate with lazy=false
+[2023-05-03 05:40:44,089] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:arrivalDate]
+[2023-05-03 05:40:44,089] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for arrivalDate
+[2023-05-03 05:40:44,090] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property arrivalDate
+[2023-05-03 05:40:44,090] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=departure_airport_code, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,090] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property departureAirportCode with lazy=false
+[2023-05-03 05:40:44,091] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:departureAirportCode]
+[2023-05-03 05:40:44,091] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for departureAirportCode
+[2023-05-03 05:40:44,091] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property departureAirportCode
+[2023-05-03 05:40:44,092] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=departure_date, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,094] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property departureDate with lazy=false
+[2023-05-03 05:40:44,095] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:departureDate]
+[2023-05-03 05:40:44,097] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for departureDate
+[2023-05-03 05:40:44,097] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property departureDate
+[2023-05-03 05:40:44,098] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=flight_no, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,098] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property flightNo with lazy=false
+[2023-05-03 05:40:44,098] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:flightNo]
+[2023-05-03 05:40:44,098] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for flightNo
+[2023-05-03 05:40:44,099] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property flightNo
+[2023-05-03 05:40:44,099] DEBUG [org.hibernate.cfg.Ejb3Column: 227] Binding column: Ejb3Column{table=org.hibernate.mapping.Table(flight), mappingColumn=status, insertable=true, updatable=true, unique=false}
+[2023-05-03 05:40:44,099] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 175] MetadataSourceProcessor property status with lazy=false
+[2023-05-03 05:40:44,100] DEBUG [org.hibernate.cfg.AbstractPropertyHolder: 94] Attempting to locate auto-apply AttributeConverter for property [hibernate.entity.Flight:status]
+[2023-05-03 05:40:44,103] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 410] building SimpleValue for status
+[2023-05-03 05:40:44,103] DEBUG [org.hibernate.cfg.annotations.PropertyBinder: 266] Building property status
+[2023-05-03 05:40:44,114] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for id
+[2023-05-03 05:40:44,115] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for aircraftId
+[2023-05-03 05:40:44,115] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for arrivalAirportCode
+[2023-05-03 05:40:44,116] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for arrivalDate
+[2023-05-03 05:40:44,116] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for departureAirportCode
+[2023-05-03 05:40:44,116] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for departureDate
+[2023-05-03 05:40:44,116] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for flightNo
+[2023-05-03 05:40:44,116] DEBUG [org.hibernate.cfg.annotations.SimpleValueBinder: 455] Starting fillSimpleValue for status
+[2023-05-03 05:40:44,119] DEBUG [org.hibernate.mapping.PrimaryKey: 36] Forcing column [id] to be non-null as it is part of the primary key for table [flight]
+[2023-05-03 05:40:44,166] DEBUG [org.hibernate.internal.SessionFactoryImpl: 208] Building session factory
+[2023-05-03 05:40:44,168] DEBUG [org.hibernate.cfg.Settings: 68] SessionFactory name : null
+[2023-05-03 05:40:44,168] DEBUG [org.hibernate.cfg.Settings: 69] Automatic flush during beforeCompletion(): enabled
+[2023-05-03 05:40:44,168] DEBUG [org.hibernate.cfg.Settings: 70] Automatic session close at end of transaction: disabled
+[2023-05-03 05:40:44,168] DEBUG [org.hibernate.cfg.Settings: 72] Statistics: disabled
+[2023-05-03 05:40:44,168] DEBUG [org.hibernate.cfg.Settings: 74] Deleted entity synthetic identifier rollback: disabled
+[2023-05-03 05:40:44,169] DEBUG [org.hibernate.cfg.Settings: 75] Default entity-mode: pojo
+[2023-05-03 05:40:44,169] DEBUG [org.hibernate.cfg.Settings: 76] Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[2023-05-03 05:40:44,169] DEBUG [org.hibernate.cfg.Settings: 77] Allow initialization of lazy state outside session : disabled
+[2023-05-03 05:40:44,169] DEBUG [org.hibernate.cfg.Settings: 79] Using BatchFetchStyle : LEGACY
+[2023-05-03 05:40:44,170] DEBUG [org.hibernate.cfg.Settings: 80] Default batch fetch size: -1
+[2023-05-03 05:40:44,170] DEBUG [org.hibernate.cfg.Settings: 81] Maximum outer join fetch depth: null
+[2023-05-03 05:40:44,170] DEBUG [org.hibernate.cfg.Settings: 82] Default null ordering: NONE
+[2023-05-03 05:40:44,170] DEBUG [org.hibernate.cfg.Settings: 83] Order SQL updates by primary key: disabled
+[2023-05-03 05:40:44,170] DEBUG [org.hibernate.cfg.Settings: 84] Order SQL inserts for batching: disabled
+[2023-05-03 05:40:44,171] DEBUG [org.hibernate.cfg.Settings: 86] multi-tenancy strategy : NONE
+[2023-05-03 05:40:44,171] DEBUG [org.hibernate.cfg.Settings: 88] JTA Track by Thread: enabled
+[2023-05-03 05:40:44,171] DEBUG [org.hibernate.cfg.Settings: 90] Query language substitutions: {}
+[2023-05-03 05:40:44,171] DEBUG [org.hibernate.cfg.Settings: 91] Named query checking : enabled
+[2023-05-03 05:40:44,171] DEBUG [org.hibernate.cfg.Settings: 93] Second-level cache: disabled
+[2023-05-03 05:40:44,172] DEBUG [org.hibernate.cfg.Settings: 94] Second-level query cache: disabled
+[2023-05-03 05:40:44,172] DEBUG [org.hibernate.cfg.Settings: 95] Second-level query cache factory: null
+[2023-05-03 05:40:44,172] DEBUG [org.hibernate.cfg.Settings: 96] Second-level cache region prefix: null
+[2023-05-03 05:40:44,172] DEBUG [org.hibernate.cfg.Settings: 97] Optimize second-level cache for minimal puts: disabled
+[2023-05-03 05:40:44,173] DEBUG [org.hibernate.cfg.Settings: 98] Structured second-level cache entries: disabled
+[2023-05-03 05:40:44,173] DEBUG [org.hibernate.cfg.Settings: 99] Second-level cache direct-reference entries: disabled
+[2023-05-03 05:40:44,173] DEBUG [org.hibernate.cfg.Settings: 100] Automatic eviction of collection cache: disabled
+[2023-05-03 05:40:44,173] DEBUG [org.hibernate.cfg.Settings: 102] JDBC batch size: 15
+[2023-05-03 05:40:44,174] DEBUG [org.hibernate.cfg.Settings: 103] JDBC batch updates for versioned data: enabled
+[2023-05-03 05:40:44,174] DEBUG [org.hibernate.cfg.Settings: 104] Scrollable result sets: enabled
+[2023-05-03 05:40:44,174] DEBUG [org.hibernate.cfg.Settings: 105] Wrap result sets: disabled
+[2023-05-03 05:40:44,174] DEBUG [org.hibernate.cfg.Settings: 106] JDBC3 getGeneratedKeys(): enabled
+[2023-05-03 05:40:44,175] DEBUG [org.hibernate.cfg.Settings: 107] JDBC result set fetch size: null
+[2023-05-03 05:40:44,175] DEBUG [org.hibernate.cfg.Settings: 108] Connection release mode: AFTER_TRANSACTION
+[2023-05-03 05:40:44,175] DEBUG [org.hibernate.cfg.Settings: 109] Generate SQL with comments: disabled
+[2023-05-03 05:40:44,176] DEBUG [org.hibernate.cfg.Settings: 111] JPA compliance - query : disabled
+[2023-05-03 05:40:44,176] DEBUG [org.hibernate.cfg.Settings: 112] JPA compliance - closed-handling : disabled
+[2023-05-03 05:40:44,176] DEBUG [org.hibernate.cfg.Settings: 113] JPA compliance - lists : disabled
+[2023-05-03 05:40:44,176] DEBUG [org.hibernate.cfg.Settings: 114] JPA compliance - transactions : disabled
+[2023-05-03 05:40:44,316] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl: 92] EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[2023-05-03 05:40:44,328] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl: 92] EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[2023-05-03 05:40:44,361] DEBUG [org.hibernate.internal.SessionFactoryImpl: 276] Session factory constructed with filter configurations : {}
+[2023-05-03 05:40:44,364] DEBUG [org.hibernate.internal.SessionFactoryImpl: 277] Instantiating session factory with properties: {hibernate.format_sql=true, java.specification.version=19, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, java.class.path=D:\JavaEnterprise\Hibernate-first-experiance\target\classes;C:\Users\Малюпасики\.m2\repository\org\hibernate\hibernate-core\5.6.15.Final\hibernate-core-5.6.15.Final.jar;C:\Users\Малюпасики\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\Малюпасики\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Малюпасики\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\Малюпасики\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Малюпасики\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Малюпасики\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Малюпасики\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Малюпасики\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Малюпасики\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Малюпасики\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Малюпасики\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Малюпасики\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Малюпасики\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Малюпасики\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Малюпасики\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Малюпасики\.m2\repository\org\postgresql\postgresql\42.6.0\postgresql-42.6.0.jar;C:\Users\Малюпасики\.m2\repository\org\checkerframework\checker-qual\3.31.0\checker-qual-3.31.0.jar;C:\Users\Малюпасики\.m2\repository\org\slf4j\slf4j-reload4j\2.0.7\slf4j-reload4j-2.0.7.jar;C:\Users\Малюпасики\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Малюпасики\.m2\repository\ch\qos\reload4j\reload4j\1.2.22\reload4j-1.2.22.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Minsk, java.vm.specification.version=19, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=RU, sun.boot.library.path=C:\Users\Малюпасики\.jdks\openjdk-19.0.1\bin, sun.java.command=hibernate.HibernateRunner, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Малюпасики, user.language=ru, sun.stderr.encoding=UTF-8, java.specification.vendor=Oracle Corporation, java.version.date=2022-10-18, java.home=C:\Users\Малюпасики\.jdks\openjdk-19.0.1, file.separator=\, java.vm.compressedOopsMode=32-bit, sun.stdout.encoding=UTF-8, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, user.script=, connection.password=12345, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=19.0.1+10-21, user.name=Малюпасики, stdout.encoding=UTF-8, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5433/postgres, file.encoding=UTF-8, format_sql=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\34EA~1\AppData\Local\Temp\, java.version=19.0.1, user.dir=D:\JavaEnterprise\Hibernate-first-experiance, os.arch=amd64, connection.username=postgres, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, connection.driver_class=org.postgresql.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@22bb5646, native.encoding=Cp1251, java.library.path=C:\Users\Малюпасики\.jdks\openjdk-19.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-19\\bin;C:\Program Files\apache-maven-3.9.0bin;C:\Program Files\Git\cmd;D:\JavaEnterprise\PostgreSQL\13\bin;C:\Users\Малюпасики\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-19bin;C:\Program Files\apache-maven-3.9.0bin;;D:\JavaEnterprise\IntelliJ IDEA 2023.1\bin;;., stderr.encoding=UTF-8, java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=19.0.1+10-21, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:postgresql://localhost:5433/postgres, java.class.version=63.0}
+[2023-05-03 05:40:44,401] DEBUG [org.hibernate.secure.spi.JaccIntegrator: 84] Skipping JACC integration as it was not enabled
+[2023-05-03 05:40:44,411] DEBUG [org.hibernate.type.EnumType: 126] Using NAMED-based conversion for Enum hibernate.entity.FlightStatus
+[2023-05-03 05:40:44,413] DEBUG [org.hibernate.internal.SessionFactoryImpl: 316] Instantiated session factory
+[2023-05-03 05:40:44,413] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope: 154] Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@5b43e173] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6cf31447]
+[2023-05-03 05:40:44,537] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 60] Not known whether passed class name [hibernate.entity.Flight] is safe
+[2023-05-03 05:40:44,542] DEBUG [org.hibernate.boot.internal.ClassLoaderAccessImpl: 62] No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hibernate.entity.Flight
+[2023-05-03 05:40:44,862] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4031] Static SQL for entity: hibernate.entity.Flight
+[2023-05-03 05:40:44,862] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4036]  Version select: select id from flight where id =?
+[2023-05-03 05:40:44,862] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4039]  Snapshot select: select flight_.id, flight_.aircraft_id as aircraft2_0_, flight_.arrival_airport_code as arrival_3_0_, flight_.arrival_date as arrival_4_0_, flight_.departure_airport_code as departur5_0_, flight_.departure_date as departur6_0_, flight_.flight_no as flight_n7_0_, flight_.status as status8_0_ from flight flight_ where flight_.id=?
+[2023-05-03 05:40:44,863] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 394]  Insert 0: insert into flight (aircraft_id, arrival_airport_code, arrival_date, departure_airport_code, departure_date, flight_no, status, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+[2023-05-03 05:40:44,863] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 394]  Update 0: update flight set aircraft_id=?, arrival_airport_code=?, arrival_date=?, departure_airport_code=?, departure_date=?, flight_no=?, status=? where id=?
+[2023-05-03 05:40:44,863] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 394]  Delete 0: delete from flight where id=?
+[2023-05-03 05:40:44,867] DEBUG [org.hibernate.persister.entity.AbstractEntityPersister: 4047]  Identity insert: insert into flight (aircraft_id, arrival_airport_code, arrival_date, departure_airport_code, departure_date, flight_no, status) values (?, ?, ?, ?, ?, ?, ?)
+[2023-05-03 05:40:44,903] DEBUG [org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl: 174] Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2e66bc32]
+[2023-05-03 05:40:44,904] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : aircraftId
+[2023-05-03 05:40:44,905] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : arrivalAirportCode
+[2023-05-03 05:40:44,905] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : arrivalDate
+[2023-05-03 05:40:44,905] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : departureAirportCode
+[2023-05-03 05:40:44,905] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : departureDate
+[2023-05-03 05:40:44,905] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : flightNo
+[2023-05-03 05:40:44,905] DEBUG [org.hibernate.persister.walking.spi.MetamodelGraphWalker: 146] Visiting attribute path : status
+[2023-05-03 05:40:44,906] DEBUG [org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy: 160] Building LoadPlan...
+[2023-05-03 05:40:44,916] DEBUG [org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor: 102] processing queryspace <gen:0>
+[2023-05-03 05:40:44,920] DEBUG [org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter: 55] LoadPlan(entity=hibernate.entity.Flight)
+    - Returns
+       - EntityReturnImpl(entity=hibernate.entity.Flight, querySpaceUid=<gen:0>, path=hibernate.entity.Flight)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hibernate.entity.Flight)
+          - SQL table alias mapping - flight0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+[2023-05-03 05:40:44,922] DEBUG [org.hibernate.loader.entity.plan.EntityLoader: 129] Static select for entity hibernate.entity.Flight [NONE]: select flight0_.id as id1_0_0_, flight0_.aircraft_id as aircraft2_0_0_, flight0_.arrival_airport_code as arrival_3_0_0_, flight0_.arrival_date as arrival_4_0_0_, flight0_.departure_airport_code as departur5_0_0_, flight0_.departure_date as departur6_0_0_, flight0_.flight_no as flight_n7_0_0_, flight0_.status as status8_0_0_ from flight flight0_ where flight0_.id=?
+[2023-05-03 05:40:44,953] DEBUG [org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator: 556] No schema actions specified
+[2023-05-03 05:40:44,953] DEBUG [org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator: 69] No actions specified; doing nothing
+[2023-05-03 05:40:44,954] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 43] No JtaPlatform was specified, checking resolver
+[2023-05-03 05:40:44,954] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator: 33] No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[2023-05-03 05:40:44,960] DEBUG [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver: 137] Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-03 05:40:44,960] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-05-03 05:40:44,965] DEBUG [org.hibernate.service.internal.SessionFactoryServiceRegistryImpl: 92] EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[2023-05-03 05:40:44,967] DEBUG [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: 45] QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@2100d047
+[2023-05-03 05:40:44,972] DEBUG [org.hibernate.query.spi.NamedQueryRepository: 171] Checking 0 named HQL queries
+[2023-05-03 05:40:44,972] DEBUG [org.hibernate.query.spi.NamedQueryRepository: 185] Checking 0 named SQL queries
+[2023-05-03 05:40:44,974] DEBUG [org.hibernate.internal.SessionFactoryRegistry: 51] Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2975a9e
+[2023-05-03 05:40:44,976] DEBUG [org.hibernate.internal.SessionFactoryRegistry: 73] Registering SessionFactory: 7fd6023e-6f95-4f41-b66d-6b0ee71cdbfb (<unnamed>)
+[2023-05-03 05:40:44,976] DEBUG [org.hibernate.internal.SessionFactoryRegistry: 80] Not binding SessionFactory to JNDI, no JNDI name configured
+[2023-05-03 05:40:45,030] DEBUG [org.hibernate.stat.internal.StatisticsInitiator: 101] Statistics initialized [enabled=false]
+[2023-05-03 05:40:45,036] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl: 53] On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[2023-05-03 05:40:45,036] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl: 81] begin
+[2023-05-03 05:40:45,036] DEBUG [hibernate.HibernateRunner: 35] Transaction is created: org.hibernate.engine.transaction.internal.TransactionImpl@29fa6b65
+[2023-05-03 05:40:45,051] DEBUG [org.hibernate.engine.spi.ActionQueue: 281] Executing identity-insert immediately
+[2023-05-03 05:40:45,057] DEBUG [org.hibernate.SQL: 144] 
+    insert 
+    into
+        flight
+        (aircraft_id, arrival_airport_code, arrival_date, departure_airport_code, departure_date, flight_no, status) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+[2023-05-03 05:40:45,072] DEBUG [org.hibernate.id.IdentifierGeneratorHelper: 78] Natively generated identity: 14
+[2023-05-03 05:40:45,072] DEBUG [org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl: 106] HHH000387: ResultSet's statement was not registered
+[2023-05-03 05:40:45,076] WARN [hibernate.HibernateRunner: 38] Flight updated Flight(id=14, flightNo=WE3467, departureDate=2000-01-19T01:00, departureAirportCode=MNK, arrivalDate=2000-01-19T05:05, arrivalAirportCode=LDN, aircraftId=1, status=SCHEDULED) in session SessionImpl(1454922150<open>)
+[2023-05-03 05:40:45,076] DEBUG [org.hibernate.engine.transaction.internal.TransactionImpl: 98] committing
+[2023-05-03 05:40:45,077] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 140] Processing flush-time cascades
+[2023-05-03 05:40:45,078] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 193] Dirty checking collections
+[2023-05-03 05:40:45,085] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 114] Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[2023-05-03 05:40:45,085] DEBUG [org.hibernate.event.internal.AbstractFlushingEventListener: 121] Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[2023-05-03 05:40:45,086] DEBUG [org.hibernate.internal.util.EntityPrinter: 110] Listing entities:
+[2023-05-03 05:40:45,087] DEBUG [org.hibernate.internal.util.EntityPrinter: 117] hibernate.entity.Flight{aircraftId=1, arrivalAirportCode=LDN, flightNo=WE3467, id=14, departureDate=2000-01-19T01:00, departureAirportCode=MNK, arrivalDate=2000-01-19T05:05, status=SCHEDULED}
+[2023-05-03 05:40:45,091] DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl: 174] Initiating JDBC connection release from afterTransaction
+[2023-05-03 05:40:45,091] DEBUG [org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl: 174] Initiating JDBC connection release from afterTransaction
+[2023-05-03 05:40:45,092] DEBUG [org.hibernate.internal.SessionFactoryImpl: 821] HHH000031: Closing
+[2023-05-03 05:40:45,093] DEBUG [org.hibernate.type.spi.TypeConfiguration$Scope: 345] Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@6aa3bfc] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@6cf31447]
+[2023-05-03 05:40:45,094] DEBUG [org.hibernate.service.internal.AbstractServiceRegistryImpl: 428] Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+[2023-05-03 05:40:45,094] INFO [org.hibernate.orm.connections.pooling: 550] HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5433/postgres]
+[2023-05-03 05:40:45,095] DEBUG [org.hibernate.boot.registry.internal.BootstrapServiceRegistryImpl: 295] Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
